@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+:root {
+    --vinotinto: #7A0505;
+    --rojo_logo: #E21318;
+    --rojo_oscuro: #B21C1D;
+    --verde_logo: #81BB44;
+    --verde_oscuro: #577C2E;
+    --amarillo_oscuro: #F18427;
+    --amarillo_claro: #F8AB44;
+}
+
+@font-face {
+    font-family: "fresh";
+    src: url(../fuentes/FreshteahealthyRegular-1Gya0.otf);
+}
+
+@font-face {
+    font-family: "alioli";
+    src: url(../fuentes/Alioli-Regular.ttf);
+}
+
+h1,
+h2
+{
+    font-family: alioli;
+}
+
+section {
+    min-height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+/* -------------barra de navegacion-------------- */
+
+nav {
+    /* background-color: var(--vinotinto); */
+    background-color: #ffffff;
+}
+
+.dropdown-item {
+    color: var(--verde_oscuro);
+    font-weight: 500;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.nav-item .nav-link {
+    margin-right: 30px;
+    font-size: 18px;
+    font-weight: 900;
+    color: #E21318;
+}
+
+.item a {
+    margin-right: 30px;
+    font-size: 18px;
+    font-weight: 900;
+    color: #E21318;
+}
+
+.barra .compras {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.barra .compras .carrito i {
+    border-radius: 20px 0px 0px 20px;
+    background-color: #E21318;
+    position: fixed;
+    z-index: 100;
+    right: 0%;
+    top: 15%;
+    padding: 20px;
+    color: #ffffff;
+    font-size: 35px;
+}
+
+.btn-secondary{
+    background-color: #81BB44;
+}
+
+.offcanvas-body H2{
+    color: var(--rojo_logo);
+}
+
+.offcanvas-header h1{
+    color: var(--rojo_oscuro);
+}
+
+
+/* -------------header-------------- */
+
+#header {
+    height: auto;
+}
+
+
+/* -------------productos-------------- */
+
+#productos {
+    background-color: #EFDFDF;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#productos .row {
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    text-align: center;
+}
+
+#productos .row h1 {
+    text-align: center;
+    color: #7A0505;
+    font-weight: 600;
+    font-size: 60px;
+}
+
+#productos ul {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#productos ul li {
+    list-style: none;
+    width: 20%;
+}
+
+#productos ul li a {
+    text-decoration: none;
+    color: #7A0505;
+    font-weight: 500;
+    text-align: center;
+    font-size: 18px;
+}
+
+#productos ul li a img {
+    width: 120px;
+    transition: 0.3s;
+}
+
+#productos ul li a img:hover {
+    transform: scale(1.2);
+}
+
+
+/* -------------recetas------------- */
+
+#recetas .textos {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#recetas .textos h1 {
+    color: #577C2E;
+    font-weight: 900;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 500;
+}
+
+#recetas .textos p {
+    text-align: center;
+}
+
+#recetas .row .col {
+    margin-bottom: 40px;
+}
+
+#recetas .row .col .card-body {
+    background-color: #EFE0E0;
+}
+
+#recetas .row .col .card img{
+    height: 250px;
+    width: 100%;
+}
+
+#recetas .row .col .card-body h5 {
+    font-weight: 700;
+    color: #7A0505;
+    font-size: 18px;
+}
+
+#recetas .row .col .card-body p{
+    font-size: 14px;
+}
+
+#recetas .row .col .card-footer {
+    background-color: #EFE0E0;
+}
+
+#recetas .row .col .ver_mas {
+    background-color: #7A0505;
+    color: white;
+    width: 120px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.modal-title{
+    color: #577C2E;
+}
+
+
+#recetas .row .col .modal .modal-body img{
+   height: 370px;
+}
+
+#recetas .row .col .modal .modal-body .contenido h3{
+    font-weight: 700;
+    font-size: 18px;
+    color: #577C2E;
+}
+
+
+#recetas .row .col .modal .modal-footer .btn-primary {
+    background-color: #577C2E;
+    border: none;
+}
+
+
+/* -------------tips------------- */
+
+#tips .textos {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#tips .textos h1 {
+    color: #577C2E;
+    text-align: center;
+    font-size: 80px;
+}
+
+#tips .textos p {
+    text-align: center;
+}
+
+#tips .row .col {
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+#tips .row .col .card-body {
+    background-color: #EFE0E0;
+}
+
+#tips .row .col .card img{
+    height: 250px;
+    width: 100%;
+}
+
+#tips .row .col .card-body h5 {
+    font-weight: 700;
+    color: #7A0505;
+    font-size: 18px;
+}
+
+#tips .row .col .card-footer {
+    background-color: #EFE0E0;
+}
+
+#tips .row .col .ver_mas {
+    background-color: #7A0505;
+    color: white;
+    width: 120px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+}
+
+#tips .row .col .modal .modal-footer .btn-primary {
+    background-color: #577C2E;
+    border: none;
+}
+
+#tips .row .col .modal .modal-body img{
+    height: 370px;
+    width: 100%;
+ }
+
+
+/* -------------quienes somos-------------- */
+
+#quienes_somos {
+    
+}
+#quienes_somos .uno{
+    background-color: #e57d7d;
+}
+#quienes_somos h1 {
+    color: #7A0505;
+    font-size: 80px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#quienes_somos .historia {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#quienes_somos .historia p {
+    width: 50%;
+    margin: none;
+    text-align: justify;
+    color: white;
+    margin: auto;
+}
+
+#quienes_somos .historia video {
+    width: 45%;
+    height: 350px;
+    margin-bottom: 16px;
+}
+
+#quienes_somos .reseñas{
+    
+    background-image: url(../recursos/logo/fondo_reseñas.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#quienes_somos .reseñas h1 {
+    color: #7a0000;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#quienes_somos .reseñas .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#quienes_somos .reseñas .galeria figure {
+    width: 30%;
+    
+}
+
+#quienes_somos .reseñas .galeria figure .marco {
+    width: 40%;
+    margin: auto;
+}
+
+#quienes_somos .reseñas .galeria figure img {
+    width: 100%;
+    border-radius: 270px;
+    border: #7A0505 5px solid;
+}
+
+#quienes_somos .reseñas .galeria figure figcaption {
+    margin-top: 15px;
+    text-align: center;
+    color: rgb(129, 0, 0);
+}
+
+#quienes_somos .reseñas .galeria figure figcaption h2 {
+    color: #913535;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+#quienes_somos .reseñas .galeria figure figcaption h3 {
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#quienes_somos .reseñas .galeria figure figcaption P{
+
+}
+
+#quienes_somos .reseñas button {
+    background-color: white;
+    border: none;
+    width: 45px;
+    height: 40px;
+    margin-bottom: 25px;
+}
+
+#quienes_somos .reseñas button a {
+    text-decoration: none;
+    color: #E21318;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+
+/* -------------footer-------------- */
+
+footer ul li a i {
+    color: #E21318;
+    font-size: 30px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    #productos {
+        height: 80vh;
+    }
+    #productos ul li {
+        width: 33%;
+    }
+    #quienes_somos .historia p {
+        width: 100%;
+    }
+    #quienes_somos .historia video {
+        width: 100%;
+    }
+    #quienes_somos .reseñas .galeria figure {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 580px) and (max-width: 768px) {
+    .barra .compras .carrito i {
+        padding: 15px;
+        font-size: 25px;
+    }
+    #productos {
+        height: 100vh;
+    }
+    #productos ul li {
+        width: 50%;
+    }
+    #quienes_somos .historia p {
+        width: 100%;
+    }
+    #quienes_somos .historia video {
+        width: 100%;
+    }
+    #quienes_somos .reseñas .galeria figure {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 580px) {
+    .barra .compras .carrito i {
+        padding: 15px;
+        font-size: 25px;
+    }
+    #productos {
+        height: 140vh;
+    }
+    #productos ul li {
+        width: 60%;
+    }
+    #quienes_somos .reseñas .galeria figure {
+        width: 55%;
+    }
+    #quienes_somos .historia p {
+        width: 90%;
+    }
+    #quienes_somos .historia video {
+        width: 100%;
+    }
+}

@@ -1,0 +1,1017 @@
+:root {
+    --vinotinto: #7A0505;
+    --rojo_logo: #E21318;
+    --rojo_oscuro: #B21C1D;
+    --verde_logo: #81BB44;
+    --verde_oscuro: #577C2E;
+    --amarillo_oscuro: #F18427;
+    --amarillo_claro: #F8AB44;
+}
+
+@font-face {
+    font-family: "fresh";
+    src: url(../fuentes/FreshteahealthyRegular-1Gya0.otf);
+}
+
+@font-face {
+    font-family: "alioli";
+    src: url(../fuentes/Alioli-Regular.ttf);
+}
+
+h1,
+h2,
+h3 {
+    font-family: alioli;
+}
+
+.caja_galeria {
+    padding: 10px;
+    display: none;
+}
+
+
+/* --------------carnes y embutidos--------- */
+
+#carnes {
+    margin-top: 70px;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#carnes .row {
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    text-align: center;
+}
+
+#carnes .row h1 {
+    width: auto;
+    margin-top: 40px;
+    margin-left: 100px;
+    text-align: left;
+    color: #7A0505;
+    font-weight: 500;
+    font-size: 50px;
+}
+
+#carnes ul {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#carnes ul li {
+    list-style: none;
+    width: 20%;
+}
+
+#carnes ul li a {
+    text-decoration: none;
+    color: #7A0505;
+    font-weight: 500;
+    text-align: center;
+    font-size: 18px;
+}
+
+#carnes ul li a img {
+    width: 100px;
+    transition: 0.3s;
+}
+
+#carnes ul li a:hover img {
+    transform: scale(1.2);
+}
+
+
+/* --------------carne de res--------- */
+
+#carne_de_res {
+    margin-top: 70px;
+}
+
+#carne_de_res .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+#carne_de_res .row figure {
+    width: 20%;
+}
+
+#carne_de_res .row figure img {
+    height: 55%;
+    width: 100%;
+}
+
+#carne_de_res .row figure figcaption {
+    margin: auto;
+    text-align: center;
+}
+
+#carne_de_res .row figure figcaption h4 {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+#carne_de_res .row figure figcaption .precio {
+    color: #577C2E;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+#carne_de_res .row figure figcaption button {
+    background-color: #577C2E;
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+#carne_de_res .row figure figcaption button:hover {
+    transform: scale(1.1);
+    background-color: #c9f897;
+}
+
+#carne_de_res .row figure figcaption button {
+    text-decoration: none;
+    color: #c9f897;
+    font-weight: 900;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+#carne_de_res .row figure figcaption button:hover {
+    color: #577C2E;
+}
+
+#carne_de_res .row figure figcaption button i {
+    margin-right: 10px;
+}
+
+
+/* --------------pollo--------- */
+
+#pollo {
+    margin-top: 70px;
+}
+
+#pollo .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+#pollo .row figure {
+    width: 20%;
+}
+
+#pollo .row figure img {
+    height: 55%;
+    width: 100%;
+}
+
+#pollo .row figure figcaption {
+    margin: auto;
+    text-align: center;
+}
+
+#pollo .row figure figcaption h4 {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+#pollo .row figure figcaption .precio {
+    color: #577C2E;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+#pollo .row figure figcaption button {
+    background-color: #577C2E;
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+#pollo .row figure figcaption button:hover {
+    transform: scale(1.1);
+    background-color: #c9f897;
+}
+
+#pollo .row figure figcaption button  {
+    text-decoration: none;
+    color: #c9f897;
+    font-weight: 900;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+#pollo .row figure figcaption button:hover  {
+    color: #577C2E;
+}
+
+#pollo .row figure figcaption button  i {
+    margin-right: 10px;
+}
+
+
+/* --------------cerdo--------- */
+
+#cerdo {
+    margin-top: 70px;
+}
+
+#cerdo .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+#cerdo .row figure {
+    width: 20%;
+}
+
+#cerdo .row figure img {
+    height: 55%;
+    width: 100%;
+}
+
+#cerdo .row figure figcaption {
+    margin: auto;
+    text-align: center;
+}
+
+#cerdo .row figure figcaption h4 {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+#cerdo .row figure figcaption .precio {
+    color: #577C2E;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+#cerdo .row figure figcaption button {
+    background-color: #577C2E;
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+#cerdo .row figure figcaption button:hover {
+    transform: scale(1.1);
+    background-color: #c9f897;
+}
+
+#cerdo .row figure figcaption button  {
+    text-decoration: none;
+    color: #c9f897;
+    font-weight: 900;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+#cerdo .row figure figcaption button:hover  {
+    color: #577C2E;
+}
+
+#cerdo .row figure figcaption button  i {
+    margin-right: 10px;
+}
+
+
+/* --------------pescado--------- */
+
+#pescado {
+    margin-top: 70px;
+}
+
+#pescado .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+#pescado .row figure {
+    width: 30%;
+}
+
+#pescado .row figure img {
+    height: 55%;
+    width: 100%;
+}
+
+#pescado .row figure figcaption {
+    margin: auto;
+    text-align: center;
+}
+
+#pescado .row figure figcaption h4 {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+#pescado .row figure figcaption .precio {
+    color: #577C2E;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+#pescado .row figure figcaption button {
+    background-color: #577C2E;
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    transition: 0, 3s;
+}
+
+#pescado .row figure figcaption button:hover {
+    transform: scale(1.1);
+    background-color: #c9f897;
+}
+
+#pescado .row figure figcaption button  {
+    text-decoration: none;
+    color: #c9f897;
+    font-weight: 900;
+    font-size: 18px;
+    transition: 0, 3s;
+}
+
+#pescado .row figure figcaption button:hover  {
+    color: #577C2E;
+}
+
+#pescado .row figure figcaption button  i {
+    margin-right: 10px;
+}
+
+
+/* --------------embutidos--------- */
+
+#embutidos {
+    margin-top: 70px;
+}
+
+#embutidos .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+#embutidos .row figure {
+    width: 20%;
+}
+
+#embutidos .row figure img {
+    height: 55%;
+    width: 100%;
+}
+
+#embutidos .row figure figcaption {
+    margin: auto;
+    text-align: center;
+}
+
+#embutidos .row figure figcaption h4 {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+#embutidos .row figure figcaption .precio {
+    color: #577C2E;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+#embutidos .row figure figcaption button {
+    background-color: #577C2E;
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+#embutidos .row figure figcaption button:hover {
+    transform: scale(1.1);
+    background-color: #c9f897;
+}
+
+#embutidos .row figure figcaption button  {
+    text-decoration: none;
+    color: #c9f897;
+    font-weight: 900;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+#embutidos .row figure figcaption button:hover  {
+    color: #577C2E;
+}
+
+#embutidos .row figure figcaption button  i {
+    margin-right: 10px;
+}
+
+
+/* --------------frutas--------- */
+
+#frutas {
+    margin-top: 70px;
+}
+
+#frutas .container h1 {
+    width: auto;
+    margin-left: 50px;
+    text-align: left;
+    color: #7A0505;
+    font-weight: 500;
+    font-size: 70px;
+}
+
+#frutas .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+#frutas .row figure {
+    width: 20%;
+}
+
+#frutas .row figure img {
+    height: 50%;
+    width: 75%;
+    object-fit: contain;
+    margin: auto;
+}
+
+#frutas .row figure figcaption {
+    margin: auto;
+    text-align: center;
+}
+
+#frutas .row figure figcaption h4 {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+#frutas .row figure figcaption .precio {
+    color: #577C2E;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+#frutas .row figure figcaption button {
+    background-color: #577C2E;
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+#frutas .row figure figcaption button:hover {
+    transform: scale(1.1);
+    background-color: #c9f897;
+}
+
+#frutas .row figure figcaption button  {
+    text-decoration: none;
+    color: #c9f897;
+    font-weight: 900;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+#frutas .row figure figcaption button:hover  {
+    color: #577C2E;
+}
+
+#frutas .row figure figcaption button  i {
+    margin-right: 10px;
+}
+
+
+/* --------------verduras--------- */
+
+#verduras {
+    margin-top: 70px;
+}
+
+#verduras .container h1 {
+    width: auto;
+    margin-left: 50px;
+    text-align: left;
+    color: #7A0505;
+    font-weight: 500;
+    font-size: 70px;
+}
+
+#verduras .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+#verduras .row figure {
+    width: 20%;
+}
+
+#verduras .row figure img {
+    height: 50%;
+    width: 75%;
+    object-fit: contain;
+    margin: auto;
+}
+
+#verduras .row figure figcaption {
+    margin: auto;
+    text-align: center;
+}
+
+#verduras .row figure figcaption h4 {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+#verduras .row figure figcaption .precio {
+    color: #577C2E;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+#verduras .row figure figcaption button {
+    background-color: #577C2E;
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+#verduras .row figure figcaption button:hover {
+    transform: scale(1.1);
+    background-color: #c9f897;
+}
+
+#verduras .row figure figcaption button  {
+    text-decoration: none;
+    color: #c9f897;
+    font-weight: 900;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+#verduras .row figure figcaption button:hover  {
+    color: #577C2E;
+}
+
+#verduras .row figure figcaption button  i {
+    margin-right: 10px;
+}
+
+
+/* --------------legumbres--------- */
+
+#legumbres {
+    margin-top: 70px;
+}
+
+#legumbres .container h1 {
+    width: auto;
+    margin-left: 50px;
+    text-align: left;
+    color: #7A0505;
+    font-weight: 500;
+    font-size: 70px;
+}
+
+#legumbres .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+#legumbres .row figure {
+    width: 20%;
+}
+
+#legumbres .row figure img {
+    height: 50%;
+    width: 75%;
+    object-fit: contain;
+    margin: auto;
+}
+
+#legumbres .row figure figcaption {
+    margin: auto;
+    text-align: center;
+}
+
+#legumbres .row figure figcaption h4 {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+#legumbres .row figure figcaption .precio {
+    color: #577C2E;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+#legumbres .row figure figcaption button {
+    background-color: #577C2E;
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+#legumbres .row figure figcaption button:hover {
+    transform: scale(1.1);
+    background-color: #c9f897;
+}
+
+#legumbres .row figure figcaption button  {
+    text-decoration: none;
+    color: #c9f897;
+    font-weight: 900;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+#legumbres .row figure figcaption button:hover  {
+    color: #577C2E;
+}
+
+#legumbres .row figure figcaption button  i {
+    margin-right: 10px;
+}
+
+
+/* --------------otros--------- */
+
+#otros {
+    margin-top: 70px;
+}
+
+#otros .container h1 {
+    width: auto;
+    margin-left: 50px;
+    text-align: left;
+    color: #7A0505;
+    font-weight: 500;
+    font-size: 70px;
+}
+
+#otros .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+#otros .row figure {
+    width: 20%;
+}
+
+#otros .row figure img {
+    height: 50%;
+    width: 75%;
+    object-fit: contain;
+    margin: auto;
+}
+
+#otros .row figure figcaption {
+    margin: auto;
+    text-align: center;
+}
+
+#otros .row figure figcaption h4 {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+#otros .row figure figcaption .precio {
+    color: #577C2E;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+#otros .row figure figcaption button {
+    background-color: #577C2E;
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+#otros .row figure figcaption button:hover {
+    transform: scale(1.1);
+    background-color: #c9f897;
+}
+
+#otros .row figure figcaption button  {
+    text-decoration: none;
+    color: #c9f897;
+    font-weight: 900;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+#otros .row figure figcaption button:hover  {
+    color: #577C2E;
+}
+
+#otros .row figure figcaption button  i {
+    margin-right: 10px;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    #carne_de_res .row figure {
+        width: 15%;
+    }
+    #carne_de_res .row figure figcaption button {
+        width: 150px;
+    }
+    /* --------------pollo--------- */
+    #pollo .row figure {
+        width: 15%;
+    }
+    #pollo .row figure figcaption button {
+        width: 150px;
+    }
+    /* --------------Cerdo--------- */
+    #cerdo .row figure {
+        width: 15%;
+    }
+    #cerdo .row figure figcaption button {
+        width: 150px;
+    }
+    /* --------------embutidos--------- */
+    #embutidos .row figure {
+        width: 15%;
+    }
+    #embutidos .row figure figcaption button {
+        width: 150px;
+    }
+    /* --------------frutas--------- */
+    #frutas .row figure {
+        width: 20%;
+    }
+    #frutas .row figure figcaption button {
+        width: 150px;
+    }
+    /* --------------verduras--------- */
+    #verduras .row figure {
+        width: 20%;
+    }
+    #verduras .row figure figcaption button {
+        width: 150px;
+    }
+
+    /* --------------legumbres--------- */
+    #legumbres .row figure {
+        width: 20%;
+    }
+    #legumbres .row figure figcaption button {
+        width: 150px;
+    }
+
+    /* --------------otros--------- */
+    #otros .row figure {
+        width: 20%;
+    }
+    #otros .row figure figcaption button {
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    #carnes {
+        height: 30vh;
+    }
+    #carnes ul li {
+        width: 33%;
+    }
+    #carne_de_res .row figure {
+        width: 33%;
+    }
+    #carne_de_res .row {
+        justify-content: inherit;
+    }
+    /* --------------pollo--------- */
+    #pollo .row figure {
+        width: 33%;
+    }
+    #pollo .row {
+        justify-content: inherit;
+    }
+    /* --------------cerdo--------- */
+    #cerdo .row figure {
+        width: 33%;
+    }
+    #cerdo .row {
+        justify-content: inherit;
+    }
+    /* --------------embutidos--------- */
+    #embutidos .row figure {
+        width: 33%;
+    }
+    #embutidos .row {
+        justify-content: inherit;
+    }
+    /* --------------frutas--------- */
+    #frutas .row figure {
+        width: 33%;
+    }
+    #frutas .row {
+        justify-content: inherit;
+    }
+    /* --------------verduras--------- */
+    #verduras .row figure {
+        width: 33%;
+    }
+    #verduras .row {
+        justify-content: inherit;
+    }
+
+    /* --------------legumbres--------- */
+    #legumbres .row figure {
+        width: 33%;
+    }
+    #legumbres .row {
+        justify-content: inherit;
+    }
+
+    /* -------------otros--------- */
+    #otros .row figure {
+        width: 33%;
+    }
+    #otros .row {
+        justify-content: inherit;
+    }
+}
+
+@media screen and (min-width: 580px) and (max-width: 768px) {
+    #carnes {
+        height: 60vh;
+    }
+    #carnes h1 {
+        margin-top: 20px;
+    }
+    #carnes ul {
+        justify-content: inherit;
+    }
+    #carnes ul li {
+        width: 50%;
+        margin-bottom: 25px;
+    }
+    #carne_de_res .row figure {
+        width: 50%;
+    }
+    /* --------------pollo--------- */
+    #pollo .row figure {
+        width: 50%;
+    }
+    /* --------------cerdo--------- */
+    #cerdo .row figure {
+        width: 50%;
+    }
+    /* --------------pescado--------- */
+    #pescado .row figure {
+        width: 50%;
+    }
+    /* --------------embutidos--------- */
+    #embutidos .row figure {
+        width: 50%;
+    }
+    /* --------------frutas--------- */
+    #frutas .row figure {
+        width: 50%;
+    }
+    /* --------------verduras--------- */
+    #verduras .row figure {
+        width: 50%;
+    }
+
+    /* --------------legumbres--------- */
+    #legumbres .row figure {
+        width: 50%;
+    }
+
+    /* --------------otros--------- */
+    #otros .row figure {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 580px) {
+    #carnes {
+        height: 90vh;
+        margin-top: 0px;
+    }
+    #carnes h1 {
+        font-size: 30px;
+    }
+    #carnes ul li {
+        width: 55%;
+    }
+    #carne_de_res .row figure {
+        width: 100%;
+    }
+    #carne_de_res .row figure figcaption button {
+        height: 60px;
+        width: 200px;
+    }
+    /* --------------pollo--------- */
+    #pollo .row figure {
+        width: 100%;
+    }
+    #pollo .row figure figcaption button {
+        height: 60px;
+        width: 200px;
+    }
+    /* --------------cerdo--------- */
+    #cerdo .row figure {
+        width: 100%;
+    }
+    #cerdo .row figure figcaption button {
+        height: 60px;
+        width: 200px;
+    }
+    /* --------------pescado--------- */
+    #pescado .row figure {
+        width: 100%;
+    }
+    #pescado .row figure figcaption button {
+        height: 60px;
+        width: 200px;
+    }
+    /* --------------embutidos--------- */
+    #embutidos .row figure {
+        width: 100%;
+    }
+    #embutidos .row figure figcaption button {
+        height: 60px;
+        width: 200px;
+    }
+    /* --------------frutas--------- */
+    #frutas .row figure {
+        width: 100%;
+    }
+    #frutas .row figure figcaption button {
+        height: 60px;
+        width: 200px;
+    }
+    /* --------------verduras--------- */
+    #verduras .row figure {
+        width: 100%;
+    }
+    #verduras .row figure figcaption button {
+        height: 60px;
+        width: 200px;
+    }
+
+    /* --------------legumbres--------- */
+    #legumbres .row figure {
+        width: 100%;
+    }
+    #legumbres .row figure figcaption button {
+        height: 60px;
+        width: 200px;
+    }
+
+    /* --------------otros--------- */
+    #otros .row figure {
+        width: 100%;
+    }
+    #otros .row figure figcaption button {
+        height: 60px;
+        width: 200px;
+    }
+}

@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" samantha sanchez>
+    <meta name="keywords" carnes finas jb, frutas, verduras, legumbres, leche, huevos, queso, tihuaque, san cristobal, bogota>
+    <meta name="descrption" sitio web de la marca carnes finas JB>
+    <title>Productos</title>
+
+
+
+    <!-- LINK A CSS BOOTSTRAP-->
+    <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.min.css">
+
+    <!-- LINK A CSS-->
+    <link rel="stylesheet" href="css/estilo_index.css">
+    <link rel="stylesheet" href="css/estilo_productos.css">
+
+    <!---------- LINK ICONO----------->
+    <link rel="icon" href="recursos/logo/logo-vertical.png">
+
+
+    <!---------- LINK ICONOS FONTAWESOME----------->
+    <script src="https://kit.fontawesome.com/4e8a4f9189.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <!-------------------- barra de navegacion--------------------->
+
+    <div class="barra">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container justify-content-between">
+                <a class="navbar-brand" href="index.html#header">
+                    <img src="recursos/logo/logo_horizontal.png" alt="" style="width: 120px;">
+                </a>
+
+
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+
+                <div class="navbar-collapse collapse flex-grow:0 " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+                        <li class="nav-item dropdown nav-link">
+                            <a class="nav-link dropdown-toggle nav-link" href="productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Productos </a>
+                            <ul class="dropdown-menu ">
+                                <li><a class="dropdown-item " href="#carnes ">Carnes y embutidos</a></li>
+                                <li>
+                                    <hr class="dropdown-divider ">
+                                </li>
+
+                                <li><a class="dropdown-item " href="#frutas ">Frutas</a></li>
+                                <li>
+                                    <hr class="dropdown-divider ">
+                                </li>
+
+                                <li><a class="dropdown-item " href="#verduras ">Verduras</a></li>
+                                <li>
+                                    <hr class="dropdown-divider ">
+                                </li>
+
+                                <li><a class="dropdown-item " href="#legumbres ">Legumbres</a></li>
+                                <li>
+                                    <hr class="dropdown-divider ">
+                                </li>
+
+                                <li><a class="dropdown-item " href="#otros ">Otros</a></li>
+                            </ul>
+                        </li>
+
+
+
+                        <li class="item p-2">
+                            <a class="nav-link " href="index.html#recetas">Recetas</a>
+                        </li>
+
+                        <li class="item p-2">
+                            <a class="nav-link " href="index.html#tips">Tips</a>
+                        </li>
+
+                        <li class="item p-2">
+                            <a class="nav-link " href="index.html#quienes_somos">¿Quienes Somos?</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!--------------------  carrito de compras --------------------->
+        <div class="compras">
+            <a class="carrito" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel"> <h1>Mi carrito</h1></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div>
+                        <h2>Lista de compras</h2>
+
+                        <div id="lista_de_carrito" class="w-100 px-2 my-3"></div>
+                    </div>
+                    
+                        <a class="btn btn-secondary" type="button" data-bs-toggle="dropdown" href="" onclick="openwin()">
+                        Comprar
+                        </a>
+                        
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!------------------------------ productos------------------------------>
+
+    <section id="productos">
+        <div class="container-fluid">
+            <div class="row">
+                <h1>Productos</h1>
+                <ul class="col-12">
+                    <li class=" ">
+                        <a href="#carnes"><img src="recursos/lista productos/carne.png" alt=""> <br> Carnes y embutidos</a>
+                    </li>
+                    <li class=" ">
+                        <a href="#frutas"><img src="recursos/lista productos/fruta.png" alt=""> <br> Frutas</a>
+                    </li>
+                    <li class=" ">
+                        <a href="#verduras"><img src="recursos/lista productos/verdura.png" alt=""> <br> Verduras</a>
+                    </li>
+                    <li class=" ">
+                        <a href="#legumbres"><img src="recursos/lista productos/legumbres.png" alt=""> <br> Legumbres</a>
+                    </li>
+                    <li class=" ">
+                        <a href="#otros"><img src="recursos/lista productos/productos-lacteos.png" alt=""> <br> Otros</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!------------------------------ carnes y embutidos------------------------------>
+
+    <section id="carnes">
+        <div class="container-fluid">
+            <div class="row">
+                <h1>Carnes y embutidos </h1>
+                <ul class="col-12">
+                    <li class=" ">
+                        <a href="#carne_de_res" onclick="caja_on_off('0')"><img src="recursos/lista productos/carne.png" alt=""> <br> Carnes de res</a>
+                    </li>
+                    <li class="">
+                        <a href="#pollo" onclick="caja_on_off('1')"><img src="recursos/barra carnes/pierna-de-pollo.png" alt=""> <br> Pollo</a>
+                    </li>
+                    <li class=" ">
+                        <a href="#cerdo" onclick="caja_on_off('2')"><img src="recursos/barra carnes/cerdo.png" alt=""> <br> Cerdo</a>
+                    </li>
+                    <li class=" ">
+                        <a href="#pescado" onclick="caja_on_off('3')"><img src="recursos/barra carnes/salmon.png" alt=""> <br> Pescado</a>
+                    </li>
+                    <li class=" ">
+                        <a href="#embutidos" onclick="caja_on_off('4')"><img src="recursos/barra carnes/salchicha.png" alt=""> <br> Embutidos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!------------------carnes-------------->
+    <div class="caja_galeria">
+
+
+        <div id="carne_de_res">
+            <div class="container">
+                <div class="row">
+
+                    <figure>
+                        <img src="recursos/barra carnes/cortes de carne/lomoderes.png" alt="">
+                        <figcaption>
+                            <h4> Lomo de res
+                                <br> x500 g
+                            </h4>
+                            <h4 class="precio">PRECIO:$24.500</h4>
+                            <button onclick="add('Lomo de res x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="recursos/barra carnes/cortes de carne/churrasco.png" alt="">
+                        <figcaption>
+                            <h4> Churrasco de res
+                                <br> x500g
+                            </h4>
+                            <h4 class="precio">PRECIO:$17.000</h4>
+                            <button onclick="add('Churrasco de res x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="recursos/barra carnes/cortes de carne/murillo.png" alt="">
+                        <figcaption>
+                            <h4>Murillo de res
+                                <br> x500g
+                            </h4>
+                            <h4 class="precio"> PRECIO:$12.000</h4>
+                            <button onclick="add('Murillo de res x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="recursos/barra carnes/cortes de carne/milanesa.png" alt="">
+                        <figcaption>
+                            <h4>Milanesa de res
+                                <br> x500g
+                            </h4>
+                            <h4 class="precio"> PRECIO:$12.000</h4>
+                            <button onclick="add('Milanesa de res x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="recursos/barra carnes/cortes de carne/hueso-carnudo.png" alt="">
+                        <figcaption>
+                            <h4>
+                                Hueso de res
+                                <br> x500g
+                            </h4>
+                            <h4 class="precio">PRECIO:$4.800</h4>
+                            <button onclick="add('Hueso de res x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-----------------pollo------------->
+
+    <div class="caja_galeria">
+        <div id="pollo">
+            <div class="container">
+                <div class="row">
+
+                    <figure>
+                        <img src="recursos/barra carnes/presas_de_pollo/alas.png" alt="">
+                        <figcaption>
+                            <h4> Alas solas de pollo
+                                <br> x500 g
+                            </h4>
+                            <h4 class="precio">PRECIO:$4.800</h4>
+                            <button onclick="add('Alas solas de pollo x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="recursos/barra carnes/presas_de_pollo/muslo-de-pollo.png" alt="">
+                        <figcaption>
+                            <h4> Muslos de pollo
+                                <br> x500g
+                            </h4>
+                            <h4 class="precio">PRECIO:$5.200</h4>
+                            <button onclick="add('Muslos de pollo x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="recursos/barra carnes/presas_de_pollo/piernas-de-pollo-.png" alt="">
+                        <figcaption>
+                            <h4>Colombinas de pollo
+                                <br> x500g
+                            </h4>
+                            <h4 class="precio">PRECIO:$4.800</h4>
+                            <button onclick="add('Colombinas de pollo x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="recursos/barra carnes/presas_de_pollo/pechuga.png" alt="">
+                        <figcaption>
+                            <h4>Pechuga de pollo
+                                <br> x500g
+                            </h4>
+                            <h4 class="precio">PRECIO:$6.900</h4>
+                            <button onclick="add('Pechuga de pollo x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="recursos/barra carnes/presas_de_pollo/menudencias.png" alt="">
+                        <figcaption>
+                            <h4>
+                                Menudencia entera
+                                <br> x500g
+                            </h4>
+                            <h4 class="precio"> PRECIO:$1.200</h4>
+                            <button onclick="add('Menudencia entera x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-----------------cerdo------------->
+
+    <div class="caja_galeria">
+
+
+        <div id="cerdo">
+            <div class="container">
+                <div class="row">
+
+                    <figure>
+                        <img src="recursos/barra carnes/cerdo/chuletas-de-cerdo.png" alt="">
+                        <figcaption>
+                            <h4> Chuleta de cerdo
+                                <br> x500 g
+                            </h4>
+                            <h4 class="precio">PRECIO:$11.700</h4>
+                            <button onclick="add('Chuleta de cerdo x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="recursos/barra carnes/cerdo/Costilla_De_Cerdo.png" alt="">
+                        <figcaption>
+                            <h4> Costillas de cerdo
+                                <br> x500g
+                            </h4>
+                            <h4 class="precio">PRECIO:$12.500</h4>
+                            <button onclick="add('Costillas de cerdo x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="recursos/barra carnes/cerdo/lomo_de_cerdo.png" alt="">
+                        <figcaption>
+                            <h4>Lomo de cerdo
+                                <br> x500g
+                            </h4>
+                            <h4 class="precio">PRECIO:$13.500</h4>
+                            <button onclick="add('Lomo de cerdo x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="recursos/barra carnes/cerdo/pezuna.png" alt="">
+                        <figcaption>
+                            <h4>Pezuña de cerdo
+                                <br> x500g
+                            </h4>
+                            <h4 class="precio">PRECIO:$5.700</h4>
+                            <button onclick="add('Pezuña de cerdo x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="recursos/barra carnes/cerdo/tocino.png" alt="">
+                        <figcaption>
+                            <h4>
+                                Tocino de cerdo
+                                <br> x500g
+                            </h4>
+                            <h4 class="precio"> PRECIO:$9.000</h4>
+                            <button onclick="add('Tocino de cerdo x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------pescado------------->
+
+
+    <div class="caja_galeria">
+        <div id="pescado">
+            <div class="container">
+                <div class="row">
+
+                    <figure>
+                        <img src="recursos/barra carnes/perscado/mojarra.png" alt="">
+                        <figcaption>
+                            <h4> Mojarra roja
+                                <br> x500 g
+                            </h4>
+                            <h4 class="precio">PRECIO:$8.500</h4>
+                            <button onclick="add('Mojarra roja x500g')"><i class="fa-solid fa-cart-shopping"></i></i> Comprar</button>
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="recursos/barra carnes/perscado/mojarra-negra.png" alt="">
+                        <figcaption>
+                            <h4> Mojarra negra
+                                <br> x500g
+                            </h4>
+                            <h4 class="precio">PRECIO:$8.000</h4>
+                            <button onclick="add('Mojarra negra x500g')"><i class="fa-solid fa-cart-shopping"></i></i> Comprar</button>
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="recursos/barra carnes/perscado/Bagre.png" alt="">
+                        <figcaption>
+                            <h4> Bagre en rodajas
+                                <br> x500g
+                            </h4>
+                            <h4 class="precio">PRECIO:$9.200</h4>
+                            <button onclick="add('Bagre en rodajas x500g')"><i class="fa-solid fa-cart-shopping"></i></i> Comprar</button>
+                        </figcaption>
+                    </figure>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------embutidos------------->
+
+    <div class="caja_galeria">
+
+
+        <div id="embutidos">
+            <div class="container">
+                <div class="row">
+
+                    <figure>
+                        <img src="recursos/barra carnes/embutidos/salchichaz.png" alt="">
+                        <figcaption>
+                            <h4> Salchicha trad.
+                                <br> 9 und x 225g
+                            </h4>
+                            <h4 class="precio">PRECIO:$5.600</h4>
+                            <button onclick="add('Salchicha tradicional 9und x225g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="recursos/barra carnes/embutidos/mortadela.png" alt="">
+                        <figcaption>
+                            <h4> Mortadela trad.
+                                <br> x250g
+                            </h4>
+                            <h4 class="precio">PRECIO:$5.200</h4>
+                            <button onclick="add('Mortadela tradicional x250g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="recursos/barra carnes/embutidos/chorizo.png" alt="">
+                        <figcaption>
+                            <h4> Chorizos precocidos
+                                <br>
+
+                            </h4><br>
+                            <h4 class="precio">PRECIO:$1.500 c/u</h4>
+                            <button onclick="add('Chorizos precocicos x1und')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                        </figcaption>
+                    </figure>
+
+
+                    <figure>
+                        <img src="recursos/barra carnes/embutidos/barra-salchichon.png" alt="">
+                        <figcaption>
+                            <h4> Barra salchichon
+                                <br> x900g
+                            </h4>
+                            <h4 class="precio">PRECIO:$6.500</h4>
+                            <button onclick="add('Barra de salchichon x900g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="recursos/barra carnes/embutidos/Longaniza.png" alt="">
+                        <figcaption>
+                            <h4> Longaniza
+                                <br> x500g
+                            </h4>
+                            <h4 class="precio">PRECIO:$8.500</h4>
+                            <button onclick="add('Longaniza x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                        </figcaption>
+                    </figure>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------- frutas ---------------------->
+
+    <section id="frutas">
+        <div class="container">
+            <h1>Frutas</h1>
+            <div class="row">
+                <figure>
+                    <img src="recursos/frutas/banano-removebg-preview.png" alt="">
+                    <figcaption>
+                        <h4>Banano
+                            <br>x500g
+                        </h4>
+                        <h4 class="precio"> PRECIO:2.500</h4>
+                        <button onclick="add('Banano x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="recursos/frutas/granadilla.png" alt="">
+                    <figcaption>
+                        <h4>Granadilla
+                            <br>x1und
+                        </h4>
+                        <h4 class="precio"> PRECIO:1.200</h4>
+                        <button onclick="add('Granadilla x1nd')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="recursos/frutas/guayaba.png" alt="">
+                    <figcaption>
+                        <h4>Guayaba
+                            <br>x500g
+                        </h4>
+                        <h4 class="precio"> PRECIO:3.000</h4>
+                        <button onclick="add('Guayaba x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="recursos/frutas/lulo-removebg-preview.png" alt="">
+                    <figcaption>
+                        <h4>Lulo
+                            <br>x500g
+                        </h4>
+                        <h4 class="precio"> PRECIO:3.200</h4>
+                        <button onclick="add('Lulo x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="recursos/frutas/mandarina.png" alt="">
+                    <figcaption>
+                        <h4>Mandarina
+                            <br>x500g
+                        </h4>
+                        <h4 class="precio"> PRECIO:1.000</h4>
+                        <button onclick="add('Mandarina x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="recursos/frutas/mango-xl-668x400x80xX-removebg-preview.png" alt="">
+                    <figcaption>
+                        <h4>Mango Tommy
+                            <br>x500g
+                        </h4>
+                        <h4 class="precio"> PRECIO:1.800</h4>
+                        <button onclick="add('Mango Tommy x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="recursos/frutas/manzana_roja-removebg-preview.png" alt="">
+                    <figcaption>
+                        <h4>Manzana roja
+                            <br>x1und
+                        </h4>
+                        <h4 class="precio"> PRECIO:1.500</h4>
+                        <button onclick="add('Manzana roja x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="recursos/frutas/Maracuya-1-und_122902-removebg-preview.png" alt="">
+                    <figcaption>
+                        <h4>Maracuya
+                            <br>x500g
+                        </h4>
+                        <h4 class="precio"> PRECIO:2.800</h4>
+                        <button onclick="add('Maracuya x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="recursos/frutas/naranja-armenia-removebg-preview.png" alt="">
+                    <figcaption>
+                        <h4>Naranja valencia
+                            <br>x500g
+                        </h4>
+                        <h4 class="precio"> PRECIO:1.400</h4>
+                        <button onclick="add('Naranja Valencia x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="recursos/frutas/pera.png" alt="">
+                    <figcaption>
+                        <h4>Pera
+                            <br>x500g
+                        </h4>
+                        <h4 class="precio"> PRECIO:4.800</h4>
+                        <button onclick="add('Pera x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                    </figcaption>
+                </figure>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!----------------------------- verduras ---------------------->
+
+    <section id="verduras">
+        <div class="container">
+            <h1>Verduras</h1>
+            <div class="row">
+                <figure>
+                    <img src="recursos/verduras/cebolla cabezona.png" alt="">
+                    <figcaption>
+                        <h4>Cebolla cabezona
+                            <br>x500g
+                        </h4>
+                        <h4 class="precio"> PRECIO:2.500</h4>
+                        <button onclick="add('Cebolla cabezona x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="recursos/verduras/cebolla_larga.png" alt="">
+                    <figcaption>
+                        <h4>Cebolla larga
+                            <br>x500g
+                        </h4>
+                        <h4 class="precio"> PRECIO:2.800</h4>
+                        <button onclick="add('Cebolla larga x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="recursos/verduras/lechuga.png" alt="">
+                    <figcaption>
+                        <h4>Lechuga crespa bolsa
+                            <br>x200g
+                        </h4>
+                        <h4 class="precio"> PRECIO:2.500</h4>
+                        <button onclick="add('Lechuga crespa en bolsa x200g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="recursos/verduras/mazorca.png" alt="">
+                    <figcaption>
+                        <h4>Mazorca
+                            <br>x500g
+                        </h4>
+                        <h4 class="precio"> PRECIO:3.700</h4>
+                        <button onclick="add('Mazorca x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="recursos/verduras/papa.png" alt="">
+                    <figcaption>
+                        <h4>Papa pastusa
+                            <br>x500g
+                        </h4>
+                        <h4 class="precio"> PRECIO:1.400</h4>
+                        <button onclick="add('Papa pastusa x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="recursos/verduras/platano-maduro.png" alt="">
+                    <figcaption>
+
+                        <h4>Platano maduro
+                            <br>x500g
+
+                        </h4>
+                        <h4 class="precio"> PRECIO:1.800</h4>
+                        <button onclick="add('Platano maduro x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="recursos/verduras/platano_verde.png" alt="">
+                    <figcaption>
+                        <h4>Platano verde
+                            <br>x500g
+                        </h4>
+                        <h4 class="precio"> PRECIO:2.000</h4>
+                        <button onclick="add('Platano verde x500g')"><i class="fa-solid fa-cart-shopping"></i>Comprar</button>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="recursos/verduras/tomate.png" alt="">
+                    <figcaption>
+                        <h4>Tomate
+                            <br>x500g
+                        </h4>
+                        <h4 class="precio"> PRECIO:2.800</h4>
+                        <button onclick="add('Tomate x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="recursos/verduras/yuca.png" alt="">
+                    <figcaption>
+                        <h4>Yuca
+                            <br>x500g
+                        </h4>
+                        <h4 class="precio"> PRECIO:3.700</h4>
+                        <button onclick="add('Yuca x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="recursos/verduras/zanahoria.png" alt="">
+                    <figcaption>
+                        <h4>Zanahoria
+                            <br>x500g
+                        </h4>
+                        <h4 class="precio"> PRECIO:1.100</h4>
+                        <button onclick="add('Zanahoria x500g')"><i class="fa-solid fa-cart-shopping"></i>Comprar</button>
+                    </figcaption>
+                </figure>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!----------------------------- legumbres ---------------------->
+
+    <section id="legumbres">
+        <div class="container">
+            <h1>Legumbres</h1>
+            <div class="row">
+                <figure>
+                    <img src="recursos/legumbres/arroz.png" alt="">
+                    <figcaption>
+                        <h4>Arroz blanco
+                            <br>x500g
+                        </h4>
+                        <h4 class="precio"> PRECIO:2.200</h4>
+                        <button onclick="add('Arroz blanco x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="recursos/legumbres/arveja.png" alt="">
+                    <figcaption>
+                        <h4>Arveja verde 
+                            <br>x500g
+                        </h4>
+                        <h4 class="precio"> PRECIO:8.500</h4>
+                        <button onclick="add('Arveja verde desgranada x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="recursos/legumbres/frijol.png" alt="">
+                    <figcaption>
+                        <h4>Frijol rojo
+                            <br>x500g
+                        </h4>
+                        <h4 class="precio"> PRECIO:7.700</h4>
+                        <button onclick="add('Frijol bola roja x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="recursos/legumbres/garbanzos.png" alt="">
+                    <figcaption>
+                        <h4>Garbanzo
+                            <br>x500g
+                        </h4>
+                        <h4 class="precio"> PRECIO:3.500</h4>
+                        <button onclick="add('Garbanzo x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="recursos/legumbres/lentejas.png" alt="">
+                    <figcaption>
+                        <h4>Lentejas
+                            <br>x500g
+                        </h4>
+                        <h4 class="precio"> PRECIO:4.700</h4>
+                        <button onclick="add('Lentejas x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                    </figcaption>
+                </figure>
+
+        
+            </div>
+        </div>
+    </section>
+
+
+
+    <!----------------------------- otros ---------------------->
+
+    <section id="otros">
+        <div class="container">
+            <h1>Otros</h1>
+            <div class="row">
+                <figure>
+                    <img src="recursos/otros/azucar.jpg" alt="">
+                    <figcaption>
+                        <h4>Azucar blanca
+                            <br>x500g
+                        </h4>
+                        <h4 class="precio"> PRECIO:2.400</h4>
+                        <button onclick="add('Azucar blanca x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="recursos/otros/huevos.png" alt="">
+                    <figcaption>
+                        <h4>Huevos AA
+                            <br>x1und
+                        </h4>
+                        <h4 class="precio"> PRECIO: 500</h4>
+                        <button onclick="add('Huevos AA x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="recursos/otros/leche.png" alt="">
+                    <figcaption>
+                        <h4>Leche entera
+                            <br>x1000ml
+                        </h4>
+                        <h4 class="precio"> PRECIO:3.000</h4>
+                        <button onclick="add('Leche entera x1000ml')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="recursos/otros/queso.png" alt="">
+                    <figcaption>
+                        <h4>Queso campesino
+                            <br>x500g
+                        </h4>
+                        <h4 class="precio"> PRECIO:7.500</h4>
+                        <button onclick="add('Queso campesino x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="recursos/otros/sal.png" alt="">
+                    <figcaption>
+                        <h4>Sal
+                            <br>x500g
+                        </h4>
+                        <h4 class="precio"> PRECIO:1.200</h4>
+                        <button onclick="add('Sal x500g')"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                    </figcaption>
+                </figure>
+
+        
+            </div>
+        </div>
+    </section>
+
+
+
+    
+</body>
+
+<!-- LINK A JS BOOTSTRAP-->
+<script src="bootstrap-5.2.0-dist/js/bootstrap.bundle.js "></script>
+
+</html>
+
+<!-- SCRIPT PSEUDOBARRA-->
+
+<script>
+    var caja_galeria = document.getElementsByClassName("caja_galeria");
+
+    document.getElementsByClassName("caja_galeria")[0].style.display = "block";
+
+    function caja_on_off(n) {
+
+        for (var i = 0; i < caja_galeria.length; i++) {
+            document.getElementsByClassName("caja_galeria")[i].style.display = "none";
+        }
+
+        document.getElementsByClassName("caja_galeria")[n].style.display = "block";
+    }
+</script>
+
+
+<!--MI SCRIPT -->
+<script>
+    
+     
+    let item = "";
+
+   let listado_array = [];
+   function add(x){
+           
+           item = " • " + x + " ";
+           
+
+           listado_array.push(item);
+           // vaciar la lista
+           document.getElementById("lista_de_carrito").innerHTML = "";
+   
+
+            for(var i = 0; i < listado_array.length;i++ ){
+              
+                document.getElementById("lista_de_carrito").innerHTML += listado_array[i];
+                document.getElementById("lista_de_carrito").innerHTML += "<br>";
+            }
+           //MSM AGREGADO
+           alert("Producto " + x + " agregado al carrito exitosamente");
+          
+       }
+
+        //MSM ENCABEZADO Y NUMERO DE WASA
+   let wame = "https://wa.me/573144502265?text=¡Hola! Estoy interesado en los siguientes productos: ";
+
+   function openwin(){
+       let mensaje =  document.getElementById("lista_de_carrito").textContent;
+       wame+= mensaje;
+        // alert(wame);
+        window.open(wame);
+   }
+
+
+</script>

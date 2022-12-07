@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" samantha sanchez>
+    <meta name="keywords" carnes finas jb, frutas, verduras, legumbres, leche, huevos, queso, tihuaque, san cristobal, bogota>
+    <meta name="descrption" sitio web de la marca carnes finas JB>
+    <title>CarnesJB</title>
+
+
+
+    <!-- LINK A CSS BOOTSTRAP-->
+    <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.min.css">
+
+    <!-- LINK A CSS-->
+    <link rel="stylesheet" href="css/estilo_index.css">
+
+    <!---------- LINK ICONO----------->
+    <link rel="icon" href="recursos/logo/logo-vertical.png">
+
+
+    <!---------- LINK ICONOS FONTAWESOME----------->
+    <script src="https://kit.fontawesome.com/4e8a4f9189.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!--------------------barra de navegacion---------------->
+    <div class="barra">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container justify-content-between">
+                <a class="navbar-brand" href="#header">
+                    <img src="recursos/logo/logo_horizontal.png" alt="" style="width: 120px;">
+                </a>
+
+
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+                <div class="navbar-collapse collapse flex-grow:0 " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+                        <li class="nav-item dropdown nav-link">
+                            <a class="nav-link dropdown-toggle nav-link" href="productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Productos </a>
+                            <ul class="dropdown-menu ">
+                                <li><a class="dropdown-item " href="productos.html#carnes">Carnes y embutidos</a></li>
+                                <li>
+                                    <hr class="dropdown-divider ">
+                                </li>
+
+                                <li><a class="dropdown-item " href="productos.html#frutas ">Frutas</a></li>
+                                <li>
+                                    <hr class="dropdown-divider ">
+                                </li>
+
+                                <li><a class="dropdown-item " href="productos.html#verduras ">Verduras</a></li>
+                                <li>
+                                    <hr class="dropdown-divider ">
+                                </li>
+
+                                <li><a class="dropdown-item " href="productos.html#legumbres ">Legumbres</a></li>
+                                <li>
+                                    <hr class="dropdown-divider ">
+                                </li>
+
+                                <li><a class="dropdown-item " href="productos.html#otros ">Otros</a></li>
+                            </ul>
+                        </li>
+
+
+
+                        <li class="item p-2">
+                            <a class="nav-link " href="#recetas ">Recetas</a>
+                        </li>
+
+                        <li class="item p-2">
+                            <a class="nav-link " href="#tips">Tips</a>
+                        </li>
+
+                        <li class="item p-2">
+                            <a class="nav-link " href="#quienes_somos">¿Quienes Somos?</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!--------------------  carrito de compras --------------------->
+        <div class="compras">
+            <a class="carrito" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel"> <h1>Mi carrito</h1></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div>
+                        <h2>Lista de compras</h2>
+
+                        <div id="lista_de_carrito" class="w-100 px-2 my-3"></div>
+                    </div>
+                    
+                        <a class="btn btn-secondary" type="button" data-bs-toggle="dropdown" href="" onclick="openwin()">
+                        Comprar
+                        </a>
+                        
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!---------------- header/slider------------- -->
+
+    <section id="header">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="recursos/banners/banner1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="recursos/banners/banner2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="recursos/banners/banner3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="recursos/banners/banner4.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </section>
+
+
+    <!------------------------------ productos------------------------------>
+
+    <section id="productos">
+        <div class="container-fluid">
+            <div class="row">
+                <h1>Productos</h1>
+                <ul class="col-12">
+                    <li class=" ">
+                        <a href="productos.html#carne_de_res"><img src="recursos/lista productos/carne.png" alt=""> <br> Carnes y embutidos</a>
+                    </li>
+                    <li class=" ">
+                        <a href="productos.html#frutas"><img src="recursos/lista productos/fruta.png" alt=""> <br> Frutas</a>
+                    </li>
+                    <li class=" ">
+                        <a href=""><img src="recursos/lista productos/verdura.png" alt=""> <br> Verduras</a>
+                    </li>
+                    <li class=" ">
+                        <a href=""><img src="recursos/lista productos/legumbres.png" alt=""> <br> Legumbres</a>
+                    </li>
+                    <li class=" ">
+                        <a href=""><img src="recursos/lista productos/productos-lacteos.png" alt=""> <br> Otros</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!------------------------------recetas------------------------------>
+
+    <section id="recetas">
+        <div class="container">
+            <div class="textos">
+                <h1>Recetas</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eaque, laborum sapiente quo veritatis quae magni placeat impedit fugiat possimus suscipit libero autem deleniti maiores quas nihil perferendis facilis dignissimos.
+                </p>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3  g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="recursos/recetas/Ajiaco-Santafereno.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Ajiaco Santafereño</h5>
+                            <p class="card-text"> Este plato, que mezcla lo mejor de la herencia indígena y española, comenzó en nuestras mesas para conmemorar eventos especiales como la Navidad y el Corpus Cristi pero con el paso del tiempo se transformó en un alimento tradicional para reunir a las familias alrededor de él.</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="ver_mas" data-bs-toggle="modal" data-bs-target="#exampleModal"> Ver más</button>
+                        </div>
+
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+                                        <h1 class="modal-title " id="exampleModalLabel">Ajiaco Santafereño</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="recursos/recetas/Ajiaco-Santafereno.jpg" alt="" style="width: 100%;">
+
+                                        <div class="contenido">
+                                            <h3> Ingredientes</h3>
+                                            <ul>
+                                                <li>3 libras de pechuga de pollo</li>
+                                                <li>4 mazorcas tiernas partidas en trozos</li>
+                                                <li>1 libra de papa criolla</li>
+                                                <li>2 libras de papa sabanera</li>
+                                                <li>4 aguacates medianos</li>
+                                                <li>4 dientes de ajo triturado</li>
+                                                <li>2 tazas de crema de leche</li>
+                                                <li>sal al gusto</li>
+                                                <li>3 tallos de cebolla larga</li>
+                                                <li>16 tazas de agua</li>
+                                                <li>1 rama de cilantro</li>
+                                                <li>3 Zanahorias</li>
+                                            </ul>
+
+                                            <ol>
+                                                <li>Poner las pechugas a hervir por 30 minutos (hasta que el pollo esté blando), luego agregar la cebolla, el ajo, y la papa pastusa y sabanera en rodajas hasta que estas esten disueltas. Adicionar la sal, el tomillo, la albahaca y el romero al gusto.</li>
+                                                <li> Se sacan las pechugas y la cebolla; Y al caldo se le agregan las mazorcas con la papa criolla permitiendo su cocion a fuego lento hasta lograr la densidad deseada. Se le añaden las guascas 5 minutos antes de servirlo.</li>
+                                                <li> En caso de que el pollo se desee servir deshilado, se debe agregar en el momento de servirlo. Y en caso de que sea en presa completa, se debe servir una porción en cada plato. También se pueden servir las carnes deshilachadas mezcladas con la crema, y así dar una mejor apariencia.</li>
+                                                <li>El plato se acompaña con el aguacate; las alcaparras y la crema de leche se sirven aparte para que cada persona se sirva a gusto</li>
+                                                <li>Las mazorcas se sirven enteras o desgranadas con el ajiaco.</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Pedir ingredientes</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="recursos/recetas/arepa de huevo.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Arepa de huevo</h5>
+                            <p class="card-text">Si quieres probar Una deliciosa arepa. Hoy les compartimos una receta para una variación rellena de carne molida. ¡Esta Arepa de Huevo con Carne también es popular en la costa de Colombia y es absolutamente deliciosa!</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="ver_mas" data-bs-toggle="modal" data-bs-target="#exampleModal1"> Ver más</button>
+                        </div>
+
+                        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog  modal-lg modal-dialog-scrollable">
+
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title " id="exampleModalLabel">Arepa de huevo </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="recursos/recetas/arepa de huevo.jpg" alt="">
+
+                                        <div class="contenido">
+                                            <h3> Ingredientes</h3>
+                                            <ul>
+                                                <li>2 tazas de harina de maiz.</li>
+                                                <li>1/2 taza de agua</li>
+                                                <li>1 cucharadita de sal.</li>
+                                                <li>4 huevos</li>
+                                                <li>1 libra de carne molida</li>
+                                                
+                                            </ul>
+
+                                            <ol>
+                                                <li>Poner la harina en un tazón junto con la sal y el azucar. Añadir poco a poco el agua hasta que se forme una masa manejable muy blanda.</li>
+                                                <li> Cuando la masa este lista se deben formar las arepas, para eso, se hacen bolitas un poco más grandes que una bola de golf, y finalmente se aplastan hasta que queden unas tortillas de medio centímetro de espesor.</li>
+                                                <li> Aparte, se pone a calentar en un caldero aceite vegetal suficiente para que las arepas naden en él.</li>
+                                                <li>
+                                                    Si la masa quedo bien.. lo que sucede es que las arepas se inflan un poco dejando un espacio dentro de ellas, donde se pondra el huevo crudo y la carne el huevo se introduce haciendo un orificio a la arepa por alguno de sus bordes, y lueg tapandolo con un poco de masa cruda que se debe reservar para ello.</li>
+                                                <li>Luego se pone a freir nuevamente solo para que el huevo se cocine así como el nuevo tapón de masa. Se comen calientes con ají picante o suero.</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Pedir ingredientes</button>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="recursos/recetas/bagre-en-salsa-1607.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Bagre en salsa</h5>
+                            <p class="card-text">El bagre en salsa criolla es una receta típica de Colombia. El bagre es un pescado con un sabor fuerte, por eso es ideal complementarlo con esta salsa ya que le aporta un poco de dulzor. Esta receta es ideal acompañarla con arroz blanco y plátano maduro al horno. </p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="ver_mas" data-bs-toggle="modal" data-bs-target="#exampleModal2"> Ver más</button>
+                        </div>
+
+                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title " id="exampleModalLabel">Bagre en salsa</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="recursos/recetas/bagre-en-salsa-1607.jpg" alt="">
+
+                                        <div class="contenido">
+                                            <h3> Ingredientes</h3>
+                                            <ul>
+                                                <li>3 rodajas de bagre</li>
+                                                <li>3 tomates</li>
+                                                <li>2 cebollas cabezonas</li>
+                                                <li>1 diente de ajo</li>
+                                                <li>80 ml de caldo de pescado</li>
+                                                <li>1 cucharadita de mantequilla</li>
+                                                <li>Sal y pimienta al gusto</li>
+                                                
+                                            </ul>
+
+                                            <ol>
+                                                <li>En una sartén con mantequilla, sofreír la cebolla cortada en cubos pequeños, durante 5 minutos. Agregar el tomate pelado y cortado en cubos pequeños, el ajo finamente picado y cocinar a fuego bajo hasta que el tomate suelte sus jugos, salpimentar.</li>
+                                                <li> Es momento de añadir el caldo de pescado y el filete de bagre previamente aderezado con sal, pimienta y comino; tapar y cocinar a fuego bajo durante 8 minutos.</li>
+                                                <li> Finalmente, servir el bagre en salsa criolla y disfrutar, perfecto para consumir con tajadas de plátano maduro</li>
+                                                
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Pedir ingredientes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="recursos/recetas/Burritos-mexicanos-con-carne-picada-y-frijoles.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Burritos mexicanos</h5>
+                            <p class="card-text">A continuación te enseñamos a hacer burritos mexicanos de carne molida de una manera fácil y rápida con este receta, con la que tan solo se necesitan 30 minutos de elaboración así que ¡no esperes más y pruébalos!</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="ver_mas" data-bs-toggle="modal" data-bs-target="#exampleModal3"> Ver más</button>
+                        </div>
+
+                        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title " id="exampleModalLabel">Burritos mexicanos</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="recursos/recetas/Burritos-mexicanos-con-carne-picada-y-frijoles.jpg" alt="" style="width:100% ;">
+
+                                        <div class="contenido">
+                                            <h3> Ingredientes</h3>
+                                            <ul>
+                                                <li>2 cucharadas soperas de aceite</li>
+                                                <li> 3 cebollas cabezonas</li>
+                                                <li>2 pimentones verdes</li>
+                                                <li>2 pimentones rojos</li>
+                                                <li>1 libra de carne molida</li>
+                                                <li>Sal y pimienta al gusto</li>
+                                                <li>1/2 libra de queso</li>
+                                                <li>1/2 libra de frijoles refritos</li>
+                                                <li>6 tortillas de harina</li>
+                                                
+                                            </ul>
+
+                                            <ol>
+                                                <li>Para la base de nuestros burritos mexicanos de carne picada necesitas picar la cebolla y los pimientos en cuadros pequeños para tener una cocción más rápida y uniforme.</li>
+                                                <li> Calienta el aceite en una sartén, agrega la cebolla blanca y remueve hasta que se ponga transparente. Una vez lista la cebolla, agrega los pimientos picados y continua la cocción por unos 5 minutos más. Pasados los 5 minutos, agrega la carne picada, deja freír en su totalidad y sazona con sal y pimienta. Reserva.</li>
+                                                <li> Para armar nuestros burritos mexicanos de carne molidapon a calentar una tortilla de harina en una sartén o plancha, pon un poco de frijoles refritos sobre la tortilla y en seguida un poco del relleno de carne junto con el queso para fundir. </li>
+                                                <li>Dobla 3 orillas de la tortilla de harina hacia el centro. Después envuelve el burrito hasta formar un rollo y procura cerrarlo bien apretado para que nada se salga.</li>
+                                                <li>Ahora sólo corta por la mitad y sirve este delicioso burrito mexicano original acompañado de una ensalada verde o de un buen guacamole casero y una michelada mexicana por ejemplo.</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Pedir ingredientes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="recursos/recetas/pollo broaster.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pollo broaster casero</h5>
+                            <p class="card-text">El pollo broaster es un pollo frito súper sabroso que puedes presentar acompañado de papas fritas, una ensalada para equilibrar y arroz blanco. Prepara un pollo broaster en casa y deleita a la familia con un plato para chuparse los dedos. Aquí podrás ver todos los ingredientes para prepararlo.</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="ver_mas" data-bs-toggle="modal" data-bs-target="#exampleModal4"> Ver más</button>
+                        </div>
+
+                        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title " id="exampleModalLabel">Pollo broaster casero</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="recursos/recetas/pollo broaster.jpg" alt="">
+
+                                        <div class="contenido">
+                                            <h3> Ingredientes</h3>
+                                            <ul>
+                                                <li>1 pollo en piezas</li>
+                                                <li> 5 huevos</li>
+                                                <li>500 gramos de harina de trigo</li>
+                                                <li>1  cucharada de maicena</li>
+                                                <li>1 cucharada de mostaza</li>
+                                                <li>Pimienta y sal al gusto</li>
+                                                
+                                                
+                                            </ul>
+
+                                            <ol>
+                                                <li>Poner el pollo en una olla, con un poco de agua y sal para asegurarse de que se cocine en el jugo que va soltando. Si falta agua se le agrega más, pero se debe tener cuidado en no añadirle de más.</li>
+                                                <li> Una vez que el pollo esté cocido, se deja aparte. Por otro lado, en un bowl se deben mezclar los huevos, la cucharada de mostaza y se agrega una pizca de sal.</li>
+                                                <li> En otro recipiente, mezclar la harina, la maicena, la pimienta y la sal al gusto. </li>
+                                                <li>En la mezcla de la mostaza con los huevos se debe agregar el pollo en piezas, mojando con huevo todo el pollo.</li>
+                                                <li>Una vez realizado, se debe pasar el pollo al otro recipiente (el de la harina) y enharinar completamente. Sacudir suavemente el pollo para retirar excesos.</li>
+                                                <li>Poner a calentar el aceite a fuego medio y freír el pollo hasta que se dore y quede bien crujiente.</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Pedir ingredientes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="recursos/recetas/sancocho.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Sancocho</h5>
+                            <p class="card-text">Los ingredientes más destacados del Sancocho y que en esta receta vamos a usar son la yuca, plátano,  arvejas, al que se agrega alguna carne, (pollo, gallina, cerdo, pescado, res, costilla, hígado, mondongo, chivo o pavo), </p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="ver_mas" data-bs-toggle="modal" data-bs-target="#exampleModal5"> Ver más</button>
+                        </div>
+
+                        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title" id="exampleModalLabel">Sancocho</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <img src="recursos/recetas/sancocho.jpg" alt="">
+
+                                      <div class="contenido">
+                                        <h3> Ingredientes</h3>
+                                        <ul>
+                                            <li>1 pollo o gallina en piezas</li>
+                                            <li> 1 libra de papa pastusa</li>
+                                            <li>2 platanos verdes</li>
+                                            <li>1 yuca</li>
+                                            <li>1 cebolla cabezona</li>
+                                            <li>1 tomate de guiso</li>
+                                            <li>1 cubo de caldo de gallina</li>
+                                            <li>1/2 libra de zanahoria</li>
+                                            <li>2 dientes de ajo</li>
+                                            <li>3 mazorcas enteras cortadas en trozos</li>
+                                        </ul>
+
+                                        <ol>
+                                            <li>Lavar la gallina despresada y untar las presas con un poco de sal, la mitad de tomate picado y cebolla picada. Se hace un picadillo con la otra mitad de las cebollas y los tomates. se pica el ajo y con la mantequilla en una olla se pone a sofreir. </li>
+                                            <li> Se adiciona a la olla las presas de gallina,las mazorcas, platanos y suficiente agua para coccion a fuego alto por una hora aproximadamente.</li>
+                                            <li>Retirar las mazorcas y reservarlas. Para este momento los alimentos mas blandos como la papa, la yuca y arracacha se adicionan a la olla. se condimenta (color,comino, cilantro cimarrón, sal y pimienta al gusto). </li>
+                                            <li>Se deja conservar a fuego muy suave por 10 minutos y se sirve, rociándolo antes con el cilantro de castilla. Se acompaña con arroz, aguacate y ají pique.</li>
+                                            
+                                        </ol>
+                                    </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Pedir ingredientes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!------------------------------------- tips------------------------- -->
+
+    <section id="tips">
+        <div class="container">
+            <div class="row">
+                <div class="textos">
+                    <h1>Tips</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eaque, laborum sapiente quo veritatis quae magni placeat impedit fugiat possimus suscipit libero autem deleniti maiores quas nihil perferendis facilis dignissimos.
+                    </p>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3  g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="recursos/tips/proteinas.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Agrega siempre proteinas en tu plato</h5>
+                                <p class="card-text">Conoce la importancia de consumir proteinas en tu dieta alimenticia.</p>
+                            </div>
+                            <div class="card-footer">
+                                <button class="ver_mas" data-bs-toggle="modal" data-bs-target="#exampleModala"> Ver más</button>
+                            </div>
+
+                            <div class="modal fade" id="exampleModala" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="recursos/tips/proteinas.jpg" alt="">
+                                            <h1 class="modal-title " id="exampleModalLabel"> Agrega siempre proteinas en tu plato</h1>
+
+                                            <div class="contenido">
+                                                <p>Otro de los tips de nutrición es incluir una porción de proteínas en cada plato. Tu cuerpo requiere de las proteínas para formar los diversos órganos y sistemas (cómo los músculos, hormonas, enzimas).
+                                                    <br>
+                                                    Algunas estrategias para consumir más proteínas son:</p>
+
+                                                    <ul>
+                                                        <li>Agrega una porción de carnes magras en cada plato. </li>
+                                                        <li>Complementa con otros alimentos como legumbres, nueces y derivados de la soya.</li>
+                                                    </ul>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="recursos/tips/congelador.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Haz uso del congelador</h5>
+                                <p class="card-text">No permitas que tus alimentos se dañen rapido y haz uso de tu congelador</p>
+                            </div>
+                            <div class="card-footer">
+                                <button class="ver_mas" data-bs-toggle="modal" data-bs-target="#exampleModal1b"> Ver más</button>
+                            </div>
+
+                            <div class="modal fade" id="exampleModal1b" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="recursos/tips/congelador.png" alt="">
+                                            <h1 class="modal-title p-3" id="exampleModalLabel"> Haz uso del congelador</h1>
+
+                                            <div class="contenido">
+                                                <p class="p-3">
+                                                    Lógicamente, el congelado es un proceso que se viene usando hace tiempo como método 
+                                                    predilecto de conservación de los alimentos. Es práctico y fácil de hacer, pero existen 
+                                                    algunos tips que pueden hacerlo todavía más útil. <br>
+                                                    Por ejemplo, considerar que ciertas 
+                                                    frutas y verduras pueden congelarse frescas así como vienen de la verdulería, y saber 
+                                                    bien cuáles son las que mejor soportan este proceso. O tener en cuenta, sin embargo, 
+                                                    que siempre quedarán mejor las verduras que se congelan luego de haber sido cocidas 
+                                                    o blanqueadas. <br>
+                                                    Siempre es conveniente chequear los tiempos que cada alimento tolera 
+                                                    en el freezer, y, sobre todo, no congelar aquellos que no se llevan bien con las bajas 
+                                                    temperaturas, o que pierden su textura y sabor al ser descongelados: la papa y la 
+                                                    mayonesa son ejemplos de ellos. <br> <br>
+                                                    Un consejo muy valioso es etiquetar o rotular todo lo 
+                                                    que congelemos: al momento de hacerlo parece que sí o sí vamos a recordar qué estamos 
+                                                    congelando, pero unas semanas después puede que nos venga bien contar con un ayudamemoria.
+                                                </p>
+                                                    
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="recursos/tips/nevera.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">No llenes tu nevera</h5>
+                                <p class="card-text">Si sueles mantener los estantes de tu nevera de manera desorganizados tienes que leer esto</p>
+                            </div>
+                            <div class="card-footer">
+                                <button class="ver_mas" data-bs-toggle="modal" data-bs-target="#exampleModalc"> Ver más</button>
+                            </div>
+
+                            <div class="modal fade" id="exampleModalc" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="recursos/tips/nevera.jpg" alt="">
+                                            <h1 class="modal-title p-3" id="exampleModalLabel"> No llenes tu nevera</h1>
+
+                                            <div class="contenido">
+                                                <p class="p-3">
+                                                    Un fallo recurrente es atiborrar determinados estantes de productos mientras dejamos 
+                                                    otros prácticamente vacíos. Eso dificulta la circulación del aire frío entre los 
+                                                    alimentos y por tanto su enfriamiento homogéneo, de manera que tenemos más posibilidades 
+                                                    de que se estropeen. Como norma, los distribuiremos de forma lo más homogénea posible, 
+                                                    colocando los menos sensibles en los estantes superiores y en los de la puerta y los 
+                                                    más perecederos en los inferiores, siempre procurando dejar espacio entre ellos.
+                                                </p>
+                                                    
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="recursos/tips/proteinas.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Agrega siempre proteinas en tu plato</h5>
+                                <p class="card-text">Conoce la importancia de consumir proteinas en tu dieta alimenticia.</p>
+                            </div>
+                            <div class="card-footer">
+                                <button class="ver_mas" data-bs-toggle="modal" data-bs-target="#exampleModala"> Ver más</button>
+                            </div>
+
+                            <div class="modal fade" id="exampleModala" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="recursos/tips/proteinas.jpg" alt="">
+                                            <h1 class="modal-title " id="exampleModalLabel"> Agrega siempre proteinas en tu plato</h1>
+
+                                            <div class="contenido">
+                                                <p>Otro de los tips de nutrición es incluir una porción de proteínas en cada plato. Tu cuerpo requiere de las proteínas para formar los diversos órganos y sistemas (cómo los músculos, hormonas, enzimas).
+                                                    <br>
+                                                    Algunas estrategias para consumir más proteínas son:</p>
+
+                                                    <ul>
+                                                        <li>Agrega una porción de carnes magras en cada plato. </li>
+                                                        <li>Complementa con otros alimentos como legumbres, nueces y derivados de la soya.</li>
+                                                    </ul>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="recursos/tips/congelador.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Haz uso del congelador</h5>
+                                <p class="card-text">No permitas que tus alimentos se dañen rapido y haz uso de tu congelador</p>
+                            </div>
+                            <div class="card-footer">
+                                <button class="ver_mas" data-bs-toggle="modal" data-bs-target="#exampleModal1b"> Ver más</button>
+                            </div>
+
+                            <div class="modal fade" id="exampleModal1b" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="recursos/tips/congelador.png" alt="">
+                                            <h1 class="modal-title p-3" id="exampleModalLabel"> Haz uso del congelador</h1>
+
+                                            <div class="contenido">
+                                                <p class="p-3">
+                                                    Lógicamente, el congelado es un proceso que se viene usando hace tiempo como método 
+                                                    predilecto de conservación de los alimentos. Es práctico y fácil de hacer, pero existen 
+                                                    algunos tips que pueden hacerlo todavía más útil. <br>
+                                                    Por ejemplo, considerar que ciertas 
+                                                    frutas y verduras pueden congelarse frescas así como vienen de la verdulería, y saber 
+                                                    bien cuáles son las que mejor soportan este proceso. O tener en cuenta, sin embargo, 
+                                                    que siempre quedarán mejor las verduras que se congelan luego de haber sido cocidas 
+                                                    o blanqueadas. <br>
+                                                    Siempre es conveniente chequear los tiempos que cada alimento tolera 
+                                                    en el freezer, y, sobre todo, no congelar aquellos que no se llevan bien con las bajas 
+                                                    temperaturas, o que pierden su textura y sabor al ser descongelados: la papa y la 
+                                                    mayonesa son ejemplos de ellos. <br> <br>
+                                                    Un consejo muy valioso es etiquetar o rotular todo lo 
+                                                    que congelemos: al momento de hacerlo parece que sí o sí vamos a recordar qué estamos 
+                                                    congelando, pero unas semanas después puede que nos venga bien contar con un ayudamemoria.
+                                                </p>
+                                                    
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="recursos/tips/nevera.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">No llenes tu nevera</h5>
+                                <p class="card-text">Si sueles mantener los estantes de tu nevera de manera desorganizados tienes que leer esto</p>
+                            </div>
+                            <div class="card-footer">
+                                <button class="ver_mas" data-bs-toggle="modal" data-bs-target="#exampleModalc"> Ver más</button>
+                            </div>
+
+                            <div class="modal fade" id="exampleModalc" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="recursos/tips/nevera.jpg" alt="">
+                                            <h1 class="modal-title p-3" id="exampleModalLabel"> No llenes tu nevera</h1>
+
+                                            <div class="contenido">
+                                                <p class="p-3">
+                                                    Un fallo recurrente es atiborrar determinados estantes de productos mientras dejamos 
+                                                    otros prácticamente vacíos. Eso dificulta la circulación del aire frío entre los 
+                                                    alimentos y por tanto su enfriamiento homogéneo, de manera que tenemos más posibilidades 
+                                                    de que se estropeen. Como norma, los distribuiremos de forma lo más homogénea posible, 
+                                                    colocando los menos sensibles en los estantes superiores y en los de la puerta y los 
+                                                    más perecederos en los inferiores, siempre procurando dejar espacio entre ellos.
+                                                </p>
+                                                    
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+    </section>
+
+
+    <!------------------------------------- Quienes somos------------------------- -->
+
+
+    <section id="quienes_somos">
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="uno">
+                    <h1 class="">Quienes Somos</h1>
+                    <div class="historia ">
+
+                        
+
+                        <p class="">
+                            El actual propietario de Carnes Finas JB Jhon Baca con el fin de seguir el legado de su
+                            familia decide fundar en el año 2012 junto a su pareja Berenice Muñoz una pequeña
+                            carnicería en el barrio Tihuaque ubicado en la localidad de San Cristóbal.
+                            La decisión de empezar con este negocio nace a partir de querer trabajar como
+                            independientes dentro de este mercado, pues ya contaban con la experiencia y el
+                            dinero suficiente. Empezó como un pequeño local compartido con otro negocio, al ir
+                            ganando reconocimiento y clientela dentro del sector las ganancias aumentaron y con
+                            el pasar de 2/3 años lograron comprar el otro negocio con el que compartían local, y
+                            así fue como ampliaron el negocio, ya no siendo solo una carnicería sino también un
+                            fruver lo que significo para el negocio un aumento en las ventas y en el número de
+                            clientes. Los propietarios felices con los resultados decidieron comprar los estantes
+                            requeridos e introducir a la línea de productos que ofrecían las legumbres.
+                            Al día de hoy cuenta con la venta de varios productos como lo son las proteínas (Carne
+                            de res, cerdo, pollo y pescado), frutas, verduras, legumbres, leche, huevos y queso.</p>
+
+                        <video class="" src="recursos/PRACTICA - Google Chrome 2022-08-29 12-23-32.mp4" controls loop poster="recursos/banners/banner.jpg"></video>
+                    </div>
+                </div>
+
+                <div class="reseñas">
+                    <h1>Tú opinión es importante para nosotros</h1>
+                    <div class="galeria">
+
+                        <figure class="">
+                            <div class="marco">
+                                <img src="recursos/reseñas/amas.jpg" alt="">
+                            </div>
+                            <figcaption>
+                                <h2>Pepita Perez</h2>
+                                <h3>Ama de casa</h3>
+                                <p>Es el negocio mas confiable de la zona, se consiguen alimentos frescos y amigables para mi bolsillo y ni hablar del servicio.</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="">
+                            <div class="marco">
+                                <img src="recursos/reseñas/amas.jpg" alt="">
+                            </div>
+                            <figcaption>
+                                <h2>Pepita Perez</h2>
+                                <h3>Ama de casa</h3>
+                                <p>Es el negocio mas confiable de la zona, se consiguen alimentos frescos y amigables para mi bolsillo y ni hablar del servicio.</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="">
+                            <div class="marco">
+                                <img src="recursos/reseñas/amas.jpg" alt="">
+                            </div>
+                            <figcaption>
+                                <h2>Pepita Perez</h2>
+                                <h3>Ama de casa</h3>
+                                <p>Es el negocio mas confiable de la zona, se consiguen alimentos frescos y amigables para mi bolsillo y ni hablar del servicio.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <button><a href="#header">^</a> </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-------------------------------------footer------------------------- -->
+
+    <footer>
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                    <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+                    </a>
+                    <span class="mb-3 mb-md-0 text-muted">© 2022 carnes Finas JB</span>
+                </div>
+
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <li class="ms-3"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="ms-3"><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    <li class="ms-3"><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </footer>
+        </div>
+    </footer>
+
+
+</body>
+<!-- LINK A JS BOOTSTRAP-->
+<script src="bootstrap-5.2.0-dist/js/bootstrap.bundle.js "></script>
+
+</html>
